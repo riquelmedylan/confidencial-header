@@ -266,4 +266,12 @@
      margin-bottom: 10px;
 }
 
+.police-description {
+     display: flex;
+     justify-content: space-evenly;
+}
+.img__police {
+     margin-right: 15px;
+}
+
 /* creo que me pude haber ahorrado bastante codigo dandole un height al grid-item y despues hacerle un space-evenly pero bueno a lo ultimo se me cayó la idea */
