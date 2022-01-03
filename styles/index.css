@@ -8,6 +8,7 @@
      --black-color: #000000;
      --blue-color: #005077;
      --red-color: #c60c30;
+     --border-color: #dde5ed;
 }
 
 @font-face {
@@ -18,12 +19,12 @@
 /* header  */
 
 .header {
-     border-bottom: 1px solid var(--white-color);
+     border-bottom: 1px solid var(--border-color);
      height: clamp(11em, 11em, 14em);
      width: 100%;
 }
 .header__container-rectangle {
-     border-bottom: 1px solid var(--white-color);
+     border-bottom: 1px solid var(--border-color);
      width: 100%;
 }
 .header__container-between {
@@ -205,7 +206,7 @@
 .section__notices {
      display: grid;
      grid-template-columns: 1fr 1.4fr 1fr;
-     column-gap: 30px;
+     column-gap: 20px;
      height: 55em;
      margin-bottom: 10px;
 }
@@ -223,13 +224,13 @@
 
 .grid-item:nth-child(1) {
      grid-column: 1/2;
-     border-right: 1px solid var(--white-color);
+     border-right: 1px solid var(--border-color);
 }
 .grid-item:nth-child(2) {
      grid-column: 2/3;
 }
 .grid-item:nth-child(3) {
-     border-left: 1px solid var(--white-color);
+     border-left: 1px solid var(--border-color);
      grid-column: 3/4;
 }
 .title__principal {
@@ -274,4 +275,18 @@
      margin-right: 15px;
 }
 
-/* creo que me pude haber ahorrado bastante codigo dandole un height al grid-item y despues hacerle un space-evenly pero bueno a lo ultimo se me cayó la idea */
+.container__daniel,
+.container__covid,
+.container__oea,
+.container__politic-two,
+.container__politic-three,
+.container__politic-four,
+.container__daniel-two {
+     border-bottom: 1px solid var(--border-color);
+}
+
+.container__politic-two,
+.container__oea,
+.container__politic-three {
+     padding-bottom: 10px;
+}
